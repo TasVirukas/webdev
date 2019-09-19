@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="lt">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Formos užduotis</title>
+    </head>
+
+    <body>
+        <h1>Duomenų informacija</h1>
+        <form method="POST">
+            <fieldset>
+                <label>El. pašto adresas:</label>
+                <input type="email" required>
+            </fieldset>
+            <fieldset>
+                    <label>Slaptažodis:</label>
+                    <input type="password" required name="password">
+            </fieldset>
+            <fieldset>
+                    <label>Patvirtinti slaptažodį:</label>
+                    <input type="password" required name="confirm">
+            </fieldset>
+            <fieldset>
+                    <label>Sutinku su <u>taisyklėmis</u>:</label>
+                    <input type="checkbox" checked name="agreement">
+            </fieldset>
+        
+        <h2>Pasirinkite sąskaitos adresą</h2>
+        
+            <fieldset>
+                <select>
+                    <option selected disabled >--Lytis--</option>
+                    <option>Moteris</option>
+                    <option>Vyras</option>
+                    <option>Kovinis straigtasparnis</option>
+                </select>
+            </fieldset>
+            
+            <fieldset>
+                <label>Vardas:</label>
+                <input type="text" name="name" required>
+            </fieldset>
+            
+            <fieldset>
+                <label>Pavardė:</label>
+                 <input type="text" name="surname" required>
+            </fieldset>
+            
+            <fieldset>
+                    <label>Gatvė, namo (buto nr):</label>
+                     <input type="text" name="street" required>
+                     <input type="number" name="home" required> 
+                     <a href=https://www.post.lt/pasto-kodu-ir-adresu-paieska target="_blank">Pašto kodo paieška</a> 
+            </fieldset>
+            
+            <fieldset>
+                    <label>Pašto kodas:</label>
+                     <input type="number" name="postcode" required>
+            </fieldset>
+
+            <fieldset>
+                    <label>Miestas:</label>
+                     <input type="text" name="town" required>
+            </fieldset>
+
+            <fieldset>
+                    <label>Šalis:</label>
+                    <select>
+                        <option>Lietuva</option>
+                        <option>Latvija</option>
+                        <option>Estija</option>
+                        <option>Žemaitija</option>
+                    </select>
+            </fieldset>
+
+            <fieldset>
+                <label>Telefonas:</label>
+                 <input type="number" name="phone" required>
+            </fieldset>
+            
+            <fieldset>
+                <label>Papildoma informacija</label>
+                <label><sub>Pavyzdžiui vartelių/durų kodas</sub></label>
+                <textarea name="message" required></textarea>
+            </fieldset>
+           
+             <p>Prašome užpildyti visus pažymėtus laukus</p>
+        
+            <button type="submit">Registruotis</button>    
+        
+        </form>   
+    </body>
+</html>
