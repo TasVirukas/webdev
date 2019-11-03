@@ -1,0 +1,109 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: Helvetica;
+	color: white;
+
+}
+
+
+html {
+	height:100%;
+}
+h1 {
+	text-align: center;
+	padding-top: 35px;
+}
+p{
+	font-size:23px;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto; 
+
+	
+}
+
+header {
+	text-align: center;
+	height: 150px;
+	padding: 20px;
+	background-color: cyan;
+	margin: 10px; 
+}
+
+footer {
+	height: 50px;
+	background-color: orange;
+	padding: 30px;
+	margin: 10px; 	
+
+}
+
+.column{
+	display: flex;
+	height: 600px;
+	text-align: center;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	align-content: space-between;
+	margin: 10px;
+
+
+}
+
+.row{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-content: space-between;
+	margin: 10px;    
+
+}
+
+
+
+.column div {
+	background-color: purple;
+	width: 30%;
+	height: 200px;
+	order: 1;
+    
+	
+
+
+
+}
+.column div:nth-child(2) {
+	background-color: green;
+	width: 30%;
+	height: 400px;
+	order: 2;
+
+}
+.column div:nth-child(3) {
+	background-color: orange;
+	width: 70%;
+	height: 450px;
+	order: 3;
+}
+.column div:nth-child(4) {
+	background-color: grey;
+	width: 70%;
+	height: 150px;
+	order: 4;
+}
+
+.row div {
+	background-color: green;
+	width: 75%;
+	height: 250px;
+	order: 1;
+}
+.row div:nth-child(2) {
+	background-color: pink;
+	width: 25%;
+	height: 250px;
+	order: 2;
+}
